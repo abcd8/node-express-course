@@ -4,9 +4,9 @@ const app = express();
 const PORT = 5000;
 
 const mockUserData = [
-  { name : 'John' },
-  { name : 'Anna' },
-];
+	{name:'Mark'},
+	{name:'Jill'}
+]
 
 app.get('/users', (req, res) => {
   res.json({
