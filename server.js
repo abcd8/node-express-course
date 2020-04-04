@@ -16,4 +16,13 @@ app.get('/users', (req, res) => {
   })
 });
 
+app.get('/users/:id', (req, res) => {
+  console.log(req.params.id)
+	res.json({
+		success: true,
+		message: 'Got one user',
+		user: req.params.id
+	})
+})
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
